@@ -19,11 +19,6 @@
                     unset($_SESSION['callbackMessage']);
                 }
             ?>
-            <script>
-                setTimeout(() => {
-                    <?php unset($_SESSION['statusCallback']); ?>    
-                }, 5000);
-            </script>
         </p>
     </div><!--callback__message-->
 
