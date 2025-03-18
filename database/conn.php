@@ -7,5 +7,5 @@ define("PASSWORD", "1234");
 try {
     $pdo = new PDO(DSN,USER,PASSWORD); 
 } catch (\Exception $e) {
-    die("Erro na conexão: " . $e->getMessage());
+    throw new RuntimeException("Erro na conexão: " . $e->getMessage());
 }

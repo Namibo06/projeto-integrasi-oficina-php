@@ -16,7 +16,7 @@
             <?php
                 if (isset($_SESSION['callbackMessage'])) {
                     echo $_SESSION['callbackMessage'];
-                    unset($_SESSION['callbackMessage']);
+                    unset($_SESSION['callbackMessage'], $_SESSION['statusCallback']);
                 }
             ?>
         </p>
@@ -39,8 +39,6 @@
             <div class="camp">
                 <label>Senha</label>
                 <input type="password" name="user_password">
-
-                <!--TODO: Colocar botão com ícone de olho para visualizar senha, dever de casa deles-->
             </div><!--camp-->
 
             <button type="submit" name="register">Enviar</button>
